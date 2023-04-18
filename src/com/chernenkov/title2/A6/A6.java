@@ -1,8 +1,8 @@
 package com.chernenkov.title2.A6;
 import java.util.Scanner;
-//Не запускает программу
+//Программа работает с ошибкой
 public class A6 {
-    public static void main(String args) {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите количество чисел: ");
         int n = scanner.nextInt();
