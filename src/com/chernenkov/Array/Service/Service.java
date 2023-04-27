@@ -1,66 +1,70 @@
-package com.chernenkov.Array;
+package com.chernenkov.Array.Service;
 
-import java.util.Scanner;
+import com.chernenkov.Array.Entity.Array;
+import com.chernenkov.Array.Repository.Repository;
 
-public class Operations {
-    //Создание массива
-    public static void operations(int[] arr) {
-
-
+public class Service {
         //Поиск минимального значения
-
+    public static int min (int[] arr){
         int min = arr[0];
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] < min)
                 min = arr[i];
         }
-        System.out.println("Минимальное значение: " + min);
+        return min;
 
+    }
         //Поиск максимального значения
-
+    public static int max (int[] arr){
         int max = arr[0];
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > max)
                 max = arr[i];
         }
-        System.out.println("Максимальное значение: " + max);
-
-        //Определение суммы улементов
-
+        return max;
+    }
+//        //Определение суммы улементов
+     public static float summ (int[] arr){
         float summ = 0;
         for (int i = 0; i < arr.length; i++) {
             summ += arr[i];
         }
-        System.out.println("Сумма: " + summ);
-
-        //Определение среднего значения массива
+        return summ;
+    }
+       //Определение среднего значения массива
+    public static float average (int[] arr) {
+        float summ = 0;
+        for (int i = 0; i < arr.length; i++) {
+            summ += arr[i];
+        }
         float average = summ / arr.length;
-        System.out.println("Среднее значение: " + average);
-
+        return average;
+    }
         //Определение числа положительных элментов:
+        public static int plus (int[] arr){
         int plus = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > 0)
                 plus += 1;
         }
-        System.out.println("Положительных элементов: " + plus);
-
-        //Определение числа отрицательных элементов
-
+        return plus;
+    }
+//        //Определение числа отрицательных элементов
+        public static int minus (int[] arr) {
         int minus = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] < 0)
                 minus += 1;
         }
-        System.out.println("Отрицательных элементов: " + minus);
-
-        //Определение нулевых элементов
+            return minus;
+        }
+//        //Определение нулевых элементов
+    public static int zero (int[] arr) {
         int zero = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == 0)
                 zero += 1;
         }
-        System.out.println("Нулевых элементов: " + zero);
+        return zero;
     }
-
 }
