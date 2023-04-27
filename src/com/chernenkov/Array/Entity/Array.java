@@ -3,7 +3,7 @@ package com.chernenkov.Array.Entity;
 public class Array {
     public String name;
 
-    public int[] arr = new int[3];
+    public int[] arr;
 
     public Array(String name, int[] arr) {
         this.name = name;
