@@ -10,8 +10,8 @@ public class main {
 
         Repository Newrepository = new Repository();
 
-        Array array1 = new Array("first", new int[]{1,2,3});
-        Array array2 = new Array("second", new int[]{4,3,5});
+        Array array1 = new Array("first", new int[]{1, 2, 3});
+        Array array2 = new Array("second", new int[]{4, 3, 5});
 
         Newrepository.AddToRepository(array1);
         Newrepository.AddToRepository(array2);
@@ -19,7 +19,7 @@ public class main {
         Warehouse warehouse = new Warehouse();
 
         int size = Newrepository.Size();
-        for (int i=0; i < size; i++){
+        for (int i = 0; i < size; i++) {
             float sum = Service.summ(Newrepository.getArr(i));
             warehouse.setSum(sum);
         }
