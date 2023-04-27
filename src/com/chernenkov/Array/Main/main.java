@@ -23,6 +23,16 @@ public class main {
             float sum = Service.summ(Newrepository.getArr(i));
             warehouse.setSum(sum);
         }
+        for (int i = 0; i < size; i++) {
+            int min = Service.min(Newrepository.getArr(i));
+            warehouse.setmin(min);
+        }
+        for (int i = 0; i < size; i++) {
+            int max = Service.max(Newrepository.getArr(i));
+            warehouse.setmax(max);
+        }
         warehouse.getSum();
+        warehouse.getmin();
+        warehouse.getmax();
     }
 }

@@ -36,5 +36,6 @@ public class main {
         }
         System.out.println("Количество чисел, содержащих только четные цифры: " + countEvenDigitsOnly);
         System.out.println("Количество чисел с равным числом четных и нечетных цифр: " + countEvenOddDigitsEqual);
+
     }
 }
