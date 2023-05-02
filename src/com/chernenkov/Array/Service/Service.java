@@ -2,6 +2,7 @@ package com.chernenkov.Array.Service;
 
 import com.chernenkov.Array.Entity.Array;
 import com.chernenkov.Array.Repository.Repository;
+import java.util.ArrayList;
 
 public class Service {
         //Поиск минимального значения
@@ -39,6 +40,7 @@ public class Service {
         }
         float average = summ / arr.length;
         return average;
+
     }
         //Определение числа положительных элментов:
         public static int plus (int[] arr){
@@ -67,4 +69,5 @@ public class Service {
         }
         return zero;
     }
+
 }

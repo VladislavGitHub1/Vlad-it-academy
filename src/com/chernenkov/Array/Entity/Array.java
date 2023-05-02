@@ -10,8 +10,12 @@ public class Array {
         this.arr = arr;
     }
 
-    public void setArr(int[] arr) {
+    public Array() {
+    }
+
+    public void setArr(String name, int[] arr) {
         this.arr = arr;
+        this.name = name;
     }
 
     public int[] getArr(){

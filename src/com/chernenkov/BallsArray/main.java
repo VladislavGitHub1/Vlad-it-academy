@@ -5,7 +5,9 @@ import java.util.Scanner;
 
 public class main {
     public static void main(String[] args) {
-        Bascket grey = new Bascket();
+        Bascket first = new Bascket();
+        Ball grey = new Ball();
+        first.addBall(grey);
 
 
             Scanner scanner = new Scanner(System.in);
